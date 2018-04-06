@@ -22,10 +22,13 @@ print ('Valor do aluguel: R$ %.2f' %(km*0.15 + dias*60) )
 """
 Faça um Programa que leia três números e mostre o maior deles.
 """
-
 n1 = int(input('digite primeiro número: '))
+
 n2 = int(input('digite segundo número: '))
-n3 = int(input('digite terceiro número: '))
+
+n3 = int(input('digite segundo número: '))
+
+media = (n1+n2+n3)/ int(3)
 
 maior = n1
 menor = n1
@@ -41,7 +44,7 @@ if menor > n2:
 
 if menor > n3:
 	menor = n3
-
+print('media de n: %d' %media)
 print ('Maior:  %d ' %maior)
 print ('Menor:  %d ' %menor)
 
