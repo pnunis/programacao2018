@@ -1,0 +1,21 @@
+#questao1
+import random
+
+lista = []
+maior = 0
+menor = 100
+
+for i in range(20):
+	n = random.randint(1,100)
+	lista.append(n)
+
+	if n < menor: 
+		menor = n
+	if n > maior:
+		maior = n
+
+lista.sort()
+print ("="*40)
+print (lista)
+print("\nMenor: %d - Maior: %d" %(menor, maior))
+print ("="*40)
